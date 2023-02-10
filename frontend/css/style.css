@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root{
+    --color-negro: #212121;
+    --color-texto-blanco: #ffffffb9;
+    --color-texto-blanco-hover: #fff;
+    --color-navabar-boxshadow: rgba(0,0,0,0.3);
+
+    --color-fondo-filtros: #cecece;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--color-navabar-boxshadow);
+    border-radius: 20px;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+nav{
+    width: 100%;
+    background-color: var(--color-negro);
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    box-shadow: 0 1px 2px var(--color-navabar-boxshadow);
+}
+
+nav div{
+    color: var(--color-texto-blanco);
+    display: inline-block;
+}
+
+nav .logo{
+    padding: 0.8em;
+    margin-left: 30px;
+    width: 100%;
+}
+
+nav .logo img{
+    width: 100px;
+}
+
+nav .navbar__list ul{
+   list-style: none;
+   display: flex;
+   padding: 1.2em;
+}
+
+nav .navbar__list ul li{
+    margin: 0px 20px;
+}
+
+nav .navbar__list ul li:first-letter{
+    text-transform: uppercase;
+}
+
+nav .navbar__list ul li:hover{
+    cursor: pointer;
+    color: var(--color-texto-blanco-hover);
+}
+
+.alienar{
+    display: flex;
+}
+
+.filtros{
+    position: relative;
+    width: 20%;
+    height: 100vh;
+    background-color: var(--color-fondo-filtros);
+}
+
+.filtros ul{
+    padding: 10px 0 0 10px;
+}
+
+.filtros .listas::first-letter,
+.filtros .listas ul::first-letter{
+    text-transform: uppercase;
+}
+
+.filtros .listas li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.filtros .listas li span{
+    font-weight: 600;
+}
+
+
+.filtros .listas li span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.tableros{
+    width: 80%;
+    padding: 5%;
+}
+
+.tableros .tablero iframe{
+    width: 100%;
+    height: 800px;
+}
+
+.tableros .tablero:nth-child(2){
+    display: none;
+}
+
+
+@media (max-width: 900px) {
+    .filtros{
+        overflow: hidden;
+        font-size: 0.8em;
+    }
+}

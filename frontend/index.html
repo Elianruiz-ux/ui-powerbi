@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="https://blackbox.crystal.com.co/assets/blackbox-nav-horizontal.png" alt="logo">
+        </div>
+        <div class="navbar__list">
+            <ul>
+                <li>inicio</li>
+                <li>informes</li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="alienar">
+            <div class="filtros">
+            <div class="listas">
+                <ul>
+                    <li> 
+                        <span>comparativos</span>
+                        <ul>
+                            <li id="precio" onclick="changeTableroUno()">precio</li>
+                            <li id="descuento" onclick="changeTableroDos()">Descuento</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="listas">
+                <ul>
+                    <li> 
+                        <span>comparativos 2</span>
+                        <ul>
+                            <li>informe 1</li>
+                            <li>informe 2</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tableros">
+            <div class="tablero" id="tableroUno">
+                <h4>Precio</h4>
+                <iframe title="Cotizador Calcetines" src="https://app.powerbi.com/view?r=eyJrIjoiZWMzOWVhNDItMWNkMC00ODBkLTg2YzktYTU2YWUzM2Y4NTQzIiwidCI6IjZhNGViNDYzLTgyYmQtNGEwYi1hZDExLWZmZWJkMmZiNzI4NSIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+
+            </div>
+
+            <div class="tablero" id="tableroDos">
+                <h4>Descuento</h4>
+                <iframe title="Cotizador Calcetines" src="https://app.powerbi.com/view?r=eyJrIjoiZWMzOWVhNDItMWNkMC00ODBkLTg2YzktYTU2YWUzM2Y4NTQzIiwidCI6IjZhNGViNDYzLTgyYmQtNGEwYi1hZDExLWZmZWJkMmZiNzI4NSIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+
+            </div>
+        </div>
+        </div>
+
+        
+
+    </main>
+    
+
+    <script src="js/index.js"></script>
+</body>
+</html>
